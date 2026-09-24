@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Abbarh Royal's Farm — quality poultry products, fresh eggs, broilers and day-old chicks in Nigeria.">
+<title>Abbarh Royal's Farm | Quality Poultry. Fresh From Our Farm.</title>
+<style>
+:root{--green:#123b2a;--green2:#1d5a3f;--gold:#c9a24a;--cream:#f6f2e8;--dark:#0b1711;--white:#fff;--muted:#66736b}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;color:var(--dark);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(10,25,17,.88);backdrop-filter:blur(14px);color:#fff}
+.nav{max-width:1200px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.4px}
+.logo-mark{width:43px;height:43px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-size:21px}
+.logo span{color:#f4d88c}
+.navlinks{display:flex;gap:25px;font-size:14px}
+.navlinks a:hover{color:#f4d88c}
+.menu{display:none;font-size:25px}
+.hero{min-height:100vh;display:grid;place-items:center;color:white;text-align:center;padding:120px 22px 70px;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(4,18,10,.84),rgba(4,18,10,.42)),url("https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=2000&q=85") center/cover}
+.hero:after{content:"";position:absolute;inset:auto -10% -170px;height:300px;background:var(--cream);border-radius:50% 50% 0 0}
+.hero-content{max-width:900px;position:relative;z-index:2}
+.badge{display:inline-block;border:1px solid rgba(255,255,255,.35);padding:7px 16px;border-radius:50px;font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:22px}
+h1{font-size:clamp(42px,7vw,82px);line-height:1.02;letter-spacing:-2px}
+.gold{color:#f0cc72}
+.hero p{max-width:700px;margin:25px auto;font-size:18px;color:#eef2ee}
+.btns{display:flex;justify-content:center;gap:13px;flex-wrap:wrap}
+.btn{padding:13px 23px;border-radius:8px;font-weight:700;display:inline-block;transition:.25s}
+.primary{background:var(--gold);color:#182114}.primary:hover{transform:translateY(-3px)}
+.outline{border:1px solid rgba(255,255,255,.6);color:white}.outline:hover{background:white;color:var(--green)}
+section{padding:95px 22px}
+.container{max-width:1150px;margin:auto}
+.section-head{text-align:center;max-width:700px;margin:0 auto 48px}
+.kicker{color:var(--green2);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:12px}
+h2{font-size:clamp(30px,4vw,48px);line-height:1.1;margin:8px 0 14px}
+.section-head p{color:var(--muted)}
+.about{background:var(--cream)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.photo{min-height:450px;border-radius:25px;background:url("https://images.unsplash.com/photo-1589924691106-073b2c1f7d7f?auto=format&fit=crop&w=1200&q=85") center/cover;box-shadow:0 25px 60px rgba(0,0,0,.12)}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin-top:30px}
+.stat{background:white;padding:20px;border-radius:15px}.stat strong{display:block;font-size:28px;color:var(--green)}.stat span{font-size:13px;color:var(--muted)}
+.products{background:white}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{border:1px solid #e7e9e5;border-radius:18px;overflow:hidden;background:white;transition:.3s;box-shadow:0 8px 25px rgba(0,0,0,.04)}
+.card:hover{transform:translateY(-7px);box-shadow:0 20px 40px rgba(0,0,0,.1)}
+.card-img{height:210px;background-size:cover;background-position:center}
+.card-body{padding:21px}.card-body h3{margin-bottom:7px}.card-body p{font-size:14px;color:var(--muted);margin-bottom:15px}
+.link{color:var(--green2);font-weight:800;font-size:13px}
+.why{background:var(--green);color:white}
+.why .section-head p{color:#cddbd3}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feature{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);padding:28px;border-radius:18px}.feature .icon{font-size:30px}.feature h3{margin:10px 0 6px}.feature p{color:#d3e0d8;font-size:14px}
+.process{background:#fbfaf6}
+.timeline{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.step{text-align:center;position:relative}.num{width:48px;height:48px;margin:0 auto 13px;border-radius:50%;background:var(--gold);display:grid;place-items:center;font-weight:900}.step h4{font-size:14px}.step p{font-size:12px;color:var(--muted);margin-top:5px}
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:220px;gap:12px}.gallery div{border-radius:16px;background-size:cover;background-position:center;transition:.3s}.gallery div:hover{transform:scale(1.02)}.g1{grid-row:span 2;background-image:url("https://images.unsplash.com/photo-1563281577-a7be47e204cd?auto=format&fit=crop&w=1200&q=85")}.g2{background-image:url("https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=900&q=85")}.g3{background-image:url("https://images.unsplash.com/photo-1518497672402-8e1c9b2c1b1c?auto=format&fit=crop&w=900&q=85")}.g4{background-image:url("https://images.unsplash.com/photo-1587486913049-53fc88980cfc?auto=format&fit=crop&w=900&q=85")}.g5{background-image:url("https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=900&q=85")}
+.cta{background:linear-gradient(90deg,rgba(10,31,20,.9),rgba(10,31,20,.55)),url("https://images.unsplash.com/photo-1500076656116-558758c991c1?auto=format&fit=crop&w=1800&q=85") center/cover;color:white;text-align:center}
+.cta p{max-width:650px;margin:0 auto 25px;color:#e3ebe6}
+.contact{background:var(--cream)}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px}.contact-info{background:var(--green);color:white;border-radius:20px;padding:35px}.contact-info p{margin:15px 0;color:#dce7e0}.contact-info a{color:#f2d17a}.form{background:white;border-radius:20px;padding:30px;box-shadow:0 10px 35px rgba(0,0,0,.06)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field input,.field select,.field textarea{border:1px solid #ddd;border-radius:8px;padding:12px;font:inherit}.field textarea{min-height:110px;resize:vertical}
+footer{background:#07120c;color:#c9d3cd;padding:50px 22px 25px}.footer-grid{max-width:1150px;margin:auto;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:30px}.footer-grid h3,.footer-grid h4{color:white;margin-bottom:12px}.footer-grid a{display:block;margin:7px 0;font-size:14px}.copy{max-width:1150px;margin:35px auto 0;border-top:1px solid #26352c;padding-top:20px;font-size:12px;text-align:center}
+.rooster{width:210px;height:210px;border-radius:50%;margin:25px auto;background:radial-gradient(circle at 50% 42%,#f1c66c 0 6%,transparent 7%),radial-gradient(circle at 45% 48%,#fff 0 25%,#d2a13b 26% 29%,transparent 30%),linear-gradient(145deg,#1b5139,#0b2418);border:2px solid rgba(240,204,114,.7);box-shadow:0 20px 70px rgba(0,0,0,.3);display:grid;place-items:center;font-size:80px;animation:float 4s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px) rotate(2deg)}}
+@media(max-width:900px){.navlinks{display:none}.menu{display:block}.cards{grid-template-columns:1fr 1fr}.features{grid-template-columns:1fr 1fr}.timeline{grid-template-columns:1fr 1fr 1fr}.about-grid,.contact-grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.g1{grid-row:span 2}}
+@media(max-width:600px){section{padding:70px 18px}.cards,.features,.timeline,.fields{grid-template-columns:1fr}.gallery{grid-template-columns:1fr;grid-auto-rows:220px}.g1{grid-row:span 1}.footer-grid{grid-template-columns:1fr}.hero{padding-top:110px}.hero:after{display:none}.hero p{font-size:16px}}
+</style>
+</head>
+<body>
+<nav><div class="nav">
+<a href="#home" class="logo"><span class="logo-mark">♛</span><div>ABBRAH <span>ROYAL'S FARM</span></div></a>
+<div class="navlinks"><a href="#about">About</a><a href="#products">Products</a><a href="#farm">Farm</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+<div class="menu">☰</div>
+</div></nav>
+
+<header class="hero" id="home"><div class="hero-content">
+<div class="badge">Premium Poultry • Nigeria</div>
+<h1>ABBRAH <span class="gold">ROYAL'S</span> FARM</h1>
+<p>Raising quality. Delivering freshness. We provide carefully managed poultry products for homes, retailers, restaurants, wholesalers and growing farmers.</p>
+<div class="btns"><a class="btn primary" href="#products">Explore Our Farm</a><a class="btn outline" href="#contact">Contact Us</a></div>
+<div class="rooster" aria-label="Decorative 3D-style rooster">🐓</div>
+</div></header>
+
+<section class="about" id="about"><div class="container about-grid">
+<div class="photo"></div><div>
+<div class="kicker">About us</div><h2>Quality poultry, built on care.</h2>
+<p>Abbarh Royal's Farm is focused on producing healthy, quality poultry products while maintaining high standards of animal care, cleanliness and responsible farming.</p>
+<p style="margin-top:14px;color:#66736b">Our goal is to serve households, restaurants, retailers, wholesalers and other businesses with dependable poultry products while building a trusted agricultural brand.</p>
+<div class="stats"><div class="stat"><strong>Healthy</strong><span>Bird care & management</span></div><div class="stat"><strong>Fresh</strong><span>Careful handling</span></div><div class="stat"><strong>Reliable</strong><span>Dependable supply</span></div><div class="stat"><strong>Quality</strong><span>Consistent standards</span></div></div>
+</div></div></section>
+
+<section class="products" id="products"><div class="container"><div class="section-head"><div class="kicker">Our products</div><h2>Fresh from our farm</h2><p>Explore our poultry products and choose what fits your home, business or farming operation.</p></div>
+<div class="cards">
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=900&q=85')"></div><div class="card-body"><h3>Broiler Chickens</h3><p>Quality broilers raised under carefully managed farm conditions.</p><a class="link" href="#contact">Learn More →</a></div></div>
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=900&q=85')"></div><div class="card-body"><h3>Fresh Eggs</h3><p>Fresh eggs carefully collected and handled for quality.</p><a class="link" href="#contact">Order Eggs →</a></div></div>
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?auto=format&fit=crop&w=900&q=85')"></div><div class="card-body"><h3>Day-Old Chicks</h3><p>Healthy chicks suitable for poultry farmers and growing operations.</p><a class="link" href="#contact">Contact Us →</a></div></div>
+<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=900&q=85')"></div><div class="card-body"><h3>Poultry Feed</h3><p>Quality poultry nutrition to support healthy growth.</p><a class="link" href="#contact">Learn More →</a></div></div>
+</div></div></section>
+
+<section class="why"><div class="container"><div class="section-head"><div class="kicker" style="color:#f0cc72">Why choose us</div><h2>Built around quality & trust</h2><p>Professional poultry production with customer service at the center.</p></div>
+<div class="features">
+<div class="feature"><div class="icon">🐔</div><h3>Healthy Poultry</h3><p>We prioritize proper care and healthy farming practices.</p></div>
+<div class="feature"><div class="icon">🌱</div><h3>Responsible Farming</h3><p>We maintain clean and responsible farming environments.</p></div>
+<div class="feature"><div class="icon">🥚</div><h3>Fresh Products</h3><p>Products are carefully handled to maintain freshness.</p></div>
+<div class="feature"><div class="icon">⭐</div><h3>Quality Assurance</h3><p>We maintain consistent quality standards throughout production.</p></div>
+<div class="feature"><div class="icon">🚚</div><h3>Reliable Supply</h3><p>We work to provide dependable supply for customers and businesses.</p></div>
+<div class="feature"><div class="icon">🤝</div><h3>Trusted Service</h3><p>We value long-term relationships with our customers.</p></div>
+</div></div></section>
+
+<section class="process" id="farm"><div class="container"><div class="section-head"><div class="kicker">Our process</div><h2>From farm to customer</h2><p>A simple, carefully managed journey from production to delivery.</p></div>
+<div class="timeline">
+<div class="step"><div class="num">01</div><h4>Breeding & Hatching</h4><p>Start strong.</p></div>
+<div class="step"><div class="num">02</div><h4>Feeding & Care</h4><p>Daily attention.</p></div>
+<div class="step"><div class="num">03</div><h4>Growth & Monitoring</h4><p>Track progress.</p></div>
+<div class="step"><div class="num">04</div><h4>Quality Inspection</h4><p>Check standards.</p></div>
+<div class="step"><div class="num">05</div><h4>Packaging</h4><p>Prepare orders.</p></div>
+<div class="step"><div class="num">06</div><h4>Delivery</h4><p>Reach customers.</p></div>
+</div></div></section>
+
+<section id="gallery"><div class="container"><div class="section-head"><div class="kicker">Farm gallery</div><h2>Life at Abbarh Royal's Farm</h2><p>Realistic farm imagery and the everyday work behind quality poultry.</p></div>
+<div class="gallery"><div class="g1"></div><div class="g2"></div><div class="g3"></div><div class="g4"></div><div class="g5"></div></div></div></section>
+
+<section class="cta"><div class="container"><div class="kicker" style="color:#f0cc72">Quality starts at the farm</div><h2>Ready to order?</h2><p>Experience quality poultry products from a farm built around care, freshness and reliability.</p><div class="btns"><a class="btn primary" href="#contact">Order Now</a><a class="btn outline" href="tel:+2349031870832">Call 09031870832</a></div></div></section>
+
+<section class="contact" id="contact"><div class="container"><div class="section-head"><div class="kicker">Contact us</div><h2>Let's do business</h2><p>Send an order request or ask us about available poultry products.</p></div>
+<div class="contact-grid"><div class="contact-info"><h2 style="color:white;font-size:32px">Abbarh Royal's Farm</h2><p>📍 Nasarawa, Nasarawa State, Nigeria</p><p>📞 <a href="tel:+2349031870832">+234 903 187 0832</a></p><p>✉️ <a href="mailto:ibrahimmusaibrahim4321@gmail.com">ibrahimmusaibrahim4321@gmail.com</a></p><p>🕒 Monday – Saturday, 8:00 AM – 6:00 PM</p><div class="btns" style="justify-content:flex-start;margin-top:25px"><a class="btn primary" href="https://wa.me/2349031870832?text=Hello%20Abbarh%20Royal's%20Farm,%20I%20would%20like%20to%20make%20an%20order." target="_blank">WhatsApp Us</a></div></div>
+<form class="form" onsubmit="event.preventDefault(); alert('Thank you! Your order request has been received. Please contact us on WhatsApp or phone to confirm availability.');">
+<div class="fields"><label class="field"><span>Full Name</span><input required placeholder="Your name"></label><label class="field"><span>Phone Number</span><input required placeholder="080..."></label><label class="field"><span>Email</span><input type="email" placeholder="you@example.com"></label><label class="field"><span>Product</span><select><option>Broiler Chickens</option><option>Fresh Eggs</option><option>Day-Old Chicks</option><option>Poultry Feed</option></select></label><label class="field"><span>Quantity</span><input placeholder="e.g. 50 birds / 10 crates"></label><label class="field"><span>Delivery Location</span><input placeholder="Town / State"></label><label class="field full"><span>Additional Message</span><textarea placeholder="Tell us what you need..."></textarea></label><div class="field full"><button class="btn primary" type="submit" style="border:0;cursor:pointer">REQUEST ORDER</button></div></div>
+</form></div></div></section>
+
+<footer><div class="footer-grid"><div><h3>ABBRAH ROYAL'S FARM</h3><p>Quality Poultry. Fresh From Our Farm.</p></div><div><h4>Navigation</h4><a href="#about">About</a><a href="#products">Products</a><a href="#farm">Farm</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div><div><h4>Contact</h4><a href="tel:+2349031870832">09031870832</a><a href="mailto:ibrahimmusaibrahim4321@gmail.com">Email us</a><a href="https://wa.me/2349031870832">WhatsApp</a></div></div><div class="copy">© 2026 Abbarh Royal's Farm. All Rights Reserved.</div></footer>
+</body>
+</html>
